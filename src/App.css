@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply w-[17rem] rounded-full border border-solid border-zinc-200 py-[0.5rem] border-[1px];
+  }
+
+  .input {
+    @apply border-[2px] text-center rounded-lg border-solid border-zinc-300 w-[19rem] h-[3rem];
+  }
+}

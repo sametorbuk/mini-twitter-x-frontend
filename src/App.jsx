@@ -1,9 +1,18 @@
+import { Route } from "react-router-dom/cjs/react-router-dom.min";
 import "./App.css";
+import WelcomePage from "./pages/welcomePage";
+import LoginPage from "./pages/loginPage";
 
 function App() {
   return (
     <>
-      <h2 className="text-amber-500">SAMET</h2>
+      <Route path="/" exact>
+        <WelcomePage />
+      </Route>
+
+      <Route path="/login" exact>
+        <LoginPage />
+      </Route>
     </>
   );
 }
